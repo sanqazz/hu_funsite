@@ -1,0 +1,581 @@
+html{
+  font-size: 16px;
+}
+
+p{
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+} 
+
+
+
+
+body{
+	padding: 0;
+	margin: 0;
+	background: url('../img/background_texture.jpg') no-repeat center center fixed;
+	background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Expletus Sans', cursive;
+  
+}
+
+
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	max-width: 1200px;
+	background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family: 'Expletus Sans', cursive;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.75rem;
+}
+
+h4{
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
+  margin: 0 auto;
+  }
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  /* height: 100%;
+  background-size: cover; */
+}
+
+#home_link{
+  background: url(../img/red_mask.png) no-repeat  center center;
+  background-size: contain;
+}
+
+#discography_link{
+  background: url(../img/gold_mask.png) no-repeat  center center;
+  background-size: contain;
+}
+
+#biography_link{
+  background: url(../img/black_mask.png) no-repeat center center;
+  background-size: contain;
+  padding: 50px 50px;
+ }
+
+#photo_link{
+  background: url(../img/silver_mask.png) no-repeat  center center;
+  background-size: contain;
+}
+
+#video_link{
+  background: url(../img/gold_mask_2.png) no-repeat  center center;
+  background-size: contain;
+}
+
+.topmenu{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  width: 100%;
+  position: fixed;
+  padding-inline-start: 0px;
+  margin: 0 auto;
+}
+
+
+.topmenu > li {
+  position: relative;
+  margin-top: 55px;
+  padding: 0 6vw;
+  
+}
+
+.topmenu > li > a {
+  margin-top: 0;
+  padding: 40px 40px;
+  line-height: 1.5;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+  color: white;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.submenu a {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: .3s linear;
+}
+.submenu>li{
+  margin-top: 25px;
+  text-shadow: 2px 2px 4px black;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+.header{
+	background: black url('../img/hu_all.jpg') no-repeat center;
+	background-size: contain;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	color: whitesmoke;
+	align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+	
+}
+
+.header img{
+  justify-self: center;
+  width: 45%;
+  height: auto;
+  
+ }
+
+
+
+
+
+
+
+
+
+
+.discography{
+	display: grid;
+	height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  justify-items: center;
+}
+
+#discography_article{
+  display: grid;
+  grid-template-columns: 38.5vw 38.5vw;
+  grid-template-rows: repeat(3,38.5vw);
+  margin-bottom: 5%;  
+  column-gap: 2%;
+  row-gap: 2%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#swang_song_article{
+  background: url(../img/discography/swang_song.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  
+ }
+ #swang_song_article>article{
+   padding: 5%;
+   margin: 5%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+ 
+ }
+
+ #american_tragedy_article{
+  background: url(../img/discography/american_tragedy.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+ }
+ #american_tragedy_article>article{
+   padding: 5%;
+   margin: 5%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+ }
+
+ #notes_from_the_underground_article{
+  background: url(../img/discography/notes_from_the_underground.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+ }
+ #notes_from_the_underground_article>article{
+   padding: 5%;
+   margin: 5%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+ }
+
+ #day_of_the_dead_article{
+  background: url(../img/discography/day_of_the_dead.jfif) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+ }
+ #day_of_the_dead_article>article{
+   padding: 5%;
+   margin: 5%;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+  }
+
+#five_article{
+  background: url(../img/discography/five.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  }
+
+#five_article>article{
+  padding: 5%;
+  margin: 5%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+}
+
+#new_empire_article{
+  background: url(../img/discography/new_empire.jpg) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  }
+
+#new_empire_article>article{
+  padding: 5%;
+  margin: 5%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.75) 100%);
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+
+
+
+
+
+.biography{
+  margin-top: 80px;
+	display: block;
+	height: 100%;
+  color: whitesmoke;
+  text-align: center;
+  justify-items: center;
+  
+}
+
+
+#biography_article>div{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  line-height: 1.25rem;
+  justify-content: center;
+}
+
+.photo_left img{
+  display: flex;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 1/2;
+  size: cover;
+  
+}
+
+.biography_article_right{
+  display: flex;
+  grid-column: 2/4;
+  padding: 2vh 2vw;
+  width: 90%;
+  height: auto;
+  justify-self: right;
+  flex-direction: column;
+  max-height: 100%;
+  min-height: 30vh;
+}
+
+.photo_right img{
+  display: flex;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  grid-column: 3/4;
+  max-width: 100%;
+  }
+
+.photo_left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.photo_right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.biography_article_left{
+  display: flex;
+  grid-column: 1/3;
+  padding: 2vh 2vw;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 100%;
+  min-height: 30vh;
+}
+
+
+
+
+
+.photo{
+  margin-top: 5vh;
+  justify-content: center;
+  color: whitesmoke;
+  text-align: center;
+  margin: 1vw;
+}
+
+.video{
+  margin-top: 5vh;
+  justify-content: center;
+  justify-items: center;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.video>div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: repeat(1,50vh); */
+  justify-items: center;
+}
+
+
+.footer{
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  background-color: rgb(30, 30, 30);
+  margin-top: 10vh;
+  text-align: center;
+  color: grey;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+} 
+
+
+iframe{
+  margin: 20px 0;
+  width: 426px;
+  height: 240px;
+}
+
+ 
+
+@media (max-width: 575.98px) {
+  .container {
+  max-width: 540px;
+  margin: 0;
+  }
+  iframe{
+    width: 300px;
+    height: 150px;
+  }
+
+.video>div{
+    grid-template-columns: 1fr;
+}
+.topmenu > li > a {
+  padding: 25px 25px;
+}
+#biography_link{
+  padding: 30px 30px;
+ }
+#discography_article{
+  grid-template-columns: 90vw;
+  grid-template-rows: repeat(6,90vh);
+  padding-bottom: 100px;
+}
+#discography_article article{
+  align-self: center;
+  margin: 2%;
+  padding: 2%;
+}
+
+
+.topmenu > li {
+  margin-top: 35px;
+  padding: 0 2vw;
+}
+.biography{
+  margin-top: 0;
+}
+.header{
+	background-size: cover;
+	width: 100%;
+  height: auto;
+  margin-top: 80px;
+  padding-top: 100px;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.25rem;
+}
+
+h3{
+  font-size: 1.15rem;
+}
+
+h4{
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+.header img{
+   width: 55%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  .container {
+    max-width: 720px;	
+  }
+  iframe{
+    width: 426px;
+    height: 240px;
+  }
+  .video>div{
+    grid-template-columns: 1fr;
+}
+
+.biography{
+  margin-top: 400px;
+}
+.topmenu > li {
+  
+   padding: 0 4vw;
+}
+
+#discography_article{
+  grid-template-columns: 90vw;
+  grid-template-rows: repeat(6,90vw);
+}
+.header img{
+  width: 55%;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+  iframe{
+    width: 426px;
+    height: 240px;
+  }
+  .video>div{
+    grid-template-columns: 1fr;
+}
+#discography_article{
+  grid-template-columns: 80vw;
+  grid-template-rows: repeat(6,80vw);
+}
+.biography{
+  margin-top: 60vh;
+}
+.topmenu > li {
+ 
+ padding: 0 5vw;
+}
+.header img{
+  width: 55%;
+ }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .container {
+    max-width: 1180px;
+  }
+  iframe{
+    width: 426px;
+    height: 240px;
+  }
+  #discography_article{
+    grid-template-columns: 80vw;
+    grid-template-rows: repeat(6,80vw);
+  }
+  .biography{
+    margin-top: 500px;
+  }
+}
+
+@media (min-width: 1200px){
+  
+}
+
